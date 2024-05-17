@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part-3 SCOPING AND CONDITIONAL STATEMENTS</title>
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+    <!-- <style>
+
+    </style> -->
+
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+
+    <div class="heading">Scoping, Conditional Statements, Switch Case</div>
+
+    <script>
+
+        //SCOPING DIFFERENCE BETWEEN LET, VAR, CONST
+       let a="Varun";
+       {
+        let a="Kiddo";
+        console.log(a);
+       }
+       console.log(a);
+
+       const variable = "This is a variable define with const";
+       console.log(variable);
+
+       //CONDITIONAL STATEMENTS
+       let yourAge = 22;
+       if (yourAge<18){
+        console.log("You can drink Water");
+       }
+       else if (yourAge>=18 && yourAge<21){
+        console.log("You can consume soft drink");
+       }
+       else if (yourAge>=21){
+        console.log("You can consume alcohol");
+       }
+       else{
+        console.log("Invalid Age");
+       }
+
+       //SWITCH CASE STATEMENTS
+       const yourMakrs = 8
+       switch (yourMakrs) {
+        case 98:
+            console.log("Excelent");
+            break;
+        case 10:
+            console.log("Fail");
+            break;
+        case 88:
+            console.log("Very Good");
+            break;
+        default:
+            console.log("Invalid Marks")
+            break;
+       }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part-2 STRINGS AND STRINGS METHOD</title>
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+    <!-- <style>
+
+    </style> -->
+
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="dynamicString"></div>
+        <H1>Strings and Strings Method</H1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto corporis delectus excepturi
+            eum fuga sapiente! Corporis fugiat quod aut praesentium pariatur, error laudantium sed itaque ducimus,
+            tempora eius nihil.
+        </p>
+    </div>
+
+    <script>
+        // WRITE YOUR JavaScript
+        var stringDemo = "String"
+        console.log(stringDemo);
+        var name = "Varun Sethi";
+        var page = "Insominiac Developer"
+        //STRING LITERALS
+        var sentance = `Hey this is ${name}, admin of insta page names ${page}`;
+        var testingString = `Testing of 'singleQuote' and "doubleQuote" inside backtick`;
+        //STRING ESCAPE SEQUENCE
+        var testingString1 = "Hello \n World";
+        var stringLength = name.length;
+        console.log(name);
+        console.log(sentance);
+        console.log(testingString);
+        console.log(testingString1);
+        //DYNAMIC STRING INSERTION
+
+        // document.getElementsByClassName('dynamicString').innerHTML = '<h3>This is a H3 Heading</h3>'
+
+        var dynamicStringDiv = document.getElementsByClassName('dynamicString')[0];
+            dynamicStringDiv.innerHTML = '<h3>This is a H3 Heading</h3>'
+
+        //STRING FUNCTIONS
+        var sampleString = "This is a string";
+        console.log(sampleString);
+        //indexOf will give us the first occurance of substring
+        var position = sampleString.indexOf('is');
+        console.log(position);
+        position = sampleString.lastIndexOf('is');
+        console.log(position);
+        //SUBSTRING FROM A STRING, INDEX WILL START FROM 0 AND WHITE SPACE INCLUDES
+        var subString = sampleString.slice(1,6);
+        console.log(subString);
+        //BOTH SLICE AND SUBSTRING WILL GIVE SAME OUTPUT ONLY DIFFERENCE IS THAT SUBSTRING WILL NOT ACCEPT TEH NEGATIVE VALUES
+        var subString = sampleString.substring(1,6);
+        console.log(subString);
+        //SUBSTR WILL TAKE INPUT AS (STARTING INDEX , LENGTH TO BE GET EXTRACTED)
+        var subString1 = sampleString.substr(1,5);
+        console.log(subString1);
+        //REPLACEMENT OF ANY PARTICULAR PART OF THE STRAINF WITH A ANOTHER STRING AND OUR EXISTING STRAING WILL NOT GET MODIFIED
+        var replacedString = sampleString.replace('string' , 'Varun');
+        console.log(sampleString);
+        console.log(replacedString);
+        //CONVERSION FROM UPPER TO LOWER OR VISE A VERSA
+        var upperString = replacedString.toUpperCase();
+        console.log(upperString);
+        var lowerString = replacedString.toLowerCase();
+        console.log(lowerString);
+        //WE CAN USE CONCAT FUNCTION TO CONCAT TWO STRING
+
+        //TRIM WILL REMOVE WHITE SPACES FROM THE STRAING
+        var trimedString = replacedString.trim();
+        console.log(trimedString);
+        //CHARACTER INDEX
+        console.log(sampleString.charAt(2));
+        //WILL GIVE THE COE OF THE CHARACTER AT INDEX 2
+        console.log(sampleString.charCodeAt(2));
+    </script>
+</body>
+
+</html>
