@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part-4 ARRAYS AND OBJECTS</title>
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+    <!-- <style>
+
+    </style> -->
+
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+
+    <div class="heading">Arrays and Objects</div>
+
+    <script>
+        //PRIMITIVE DATATYPE INT STRING BOOLEAN FLOAT NULL UNDEFINED
+        let intVariable = 515;
+        let stringVariable = "Varun Sethi";
+        let booleanVariable = true;
+        let floatVariable = 515.515;
+        let nullVariable = null;
+        let undefinedVariable = undefined;
+
+        //OBJECTS
+        let student = {
+            studentName: "Varun Sethi",
+            studentAge: 22,
+            studentDegree: "Bachelors",
+            //THIS LIND OF SYNTAX IS USED IF YOUR KEY IS HAVING A SPACE IN BETWEEN
+            "studentDegree 2": "Masters"
+        }
+        //BOTH WILL GIVE THE SAME OUTPUT ONLY SYNTAX IS DIFFERENT
+        console.log(student.studentDegree);
+        console.log(student['studentDegree']);
+
+        //AND IF WE WANT TO PRINT ANY KEY WHICH HAS SPACE IN BETWEEN WE CANT USE M-1 IT WILL THROW AN ERROR
+        // console.log(student.studentDegree 2); // ERROR
+        console.log(student['studentDegree 2']);
+
+        //ARRAY
+        let sampleArray = ["Varun Sethi" , 22 , "Bachelors"];
+        console.log(sampleArray);
+        console.log(sampleArray[0]);
+        
+        //DEFINING ARRAY WITH NEW KEYWORD
+        //IN JS NEW KEYWORD IS USED TO DEFINE NEW OBJECT
+        let sampleArray1 = new Array("Varun Sethi" , 22 , "Bachelors");
+        console.log(sampleArray1);
+        console.log(sampleArray1.length);
+
+        //SORTING AN ARRAY
+        sampleArray1 = sampleArray1.sort();
+        console.log(sampleArray1);
+
+        //ADDING AN ELEMENT AT THE END TO AN ARRAY
+        sampleArray1.push("New Element");
+        console.log(sampleArray1);
+
+        //DEFINING AN ARRAY WITH 10 ELEMENTS
+        let sampleArray2 = new Array(10);
+        console.log(sampleArray2);
+    </script>
+</body>
+
+</html>
