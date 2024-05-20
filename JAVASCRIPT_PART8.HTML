@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part 8 - ARROW FUNCTION </title>
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 200px;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+
+    <div class="heading">Arrow Functions in JavaScript</div>
+
+    <script>
+        //ARROW FUNCTION WITH PARAMETER
+        let greetingFunction = (personName) => {
+            console.log(`Good Morning ${personName}`);
+        };
+        let personName = "Varun";
+        greetingFunction(personName);
+
+        //ARROW FUNCTION WITHOUT PARAMETER
+        let greeting = () => {
+            console.log("Good Morning");
+        }
+        greeting();
+    </script>
+</body>
+
+</html>

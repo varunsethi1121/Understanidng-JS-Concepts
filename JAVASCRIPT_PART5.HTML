@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Part-5</title>
+    <title>JavaScript Part-5 FUNCTIONS</title>
     <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
-    <!-- <style>
-
-    </style> -->
+    <style>
+        .heading{
+            text-align: center;
+            font-size: 200px;
+            font-weight: 600;
+        }
+    </style>
 
     <!-- <script>
 
@@ -17,10 +21,23 @@
 
 <body>
 
-    <div class="heading">/div>
+    <div class="heading">Functions in Javascript</div>
 
     <script>
-        
+        console.log("Functions in JavaScript");
+
+        //CREATING A FUNCTION
+        //NAME WILL BE A PARAMETER
+        function greetingFunction(name){
+            let name1 = "LOCAL VARIABLE" //SCOPE WILL BE ONLY TILL THE CLOSING OF A FUNCTION
+            console.log(name + " is a good boy");
+        }
+        let name1 = "Varun";
+        let name2 = "Arun";
+
+        //CALLING A FUNCTION
+        greetingFunction(name2);
+        greetingFunction(name1);
     </script>
 </body>
 

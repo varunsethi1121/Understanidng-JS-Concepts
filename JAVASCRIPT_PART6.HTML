@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part-6 ALERT, CONFIRM AND PROMPT </title>
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 200px;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+
+    <div class="heading">Alert, Prompt in Javascript</div>
+
+    <script>
+        //ALERT IT WILL OPEN AN MODAL WINDOW
+        alert("This is an ALER!");
+        //AFTER CLICKING ON OKAY IT WILL RETURN UNDEFINED ON CONSOLE BCZ ALERT DOES NOT RETURN ANYTHING
+        let returnValue = alert("Undefined");
+        console.log(returnValue);
+
+        //PROMPT IT WILL TAKE AN INPUT FROM USER AND RETURN IT IN CONSOLE
+        let yourName = prompt("What is your name dear ?");
+        console.log(yourName);
+
+        //EXAMPLE USING ALERT AND PROMPT
+        let yourAnswer = prompt("What will be an output on dividing 2 by 0");
+        console.log(yourAnswer);
+        let correctAnswer = 0;
+        if (yourAnswer == correctAnswer) {
+            console.log("Good");
+        }
+        else {
+            alert("You have entered an invalid answer kindly reload and attempt again.");
+        }
+
+
+        //CONFIRM USED WHEN YOU WANT TO GIVE WARNING TO THE USER BEFORE PERFORMING SPECIFIC ACTION DESIRED BY THE USER
+        let deletePost = confirm("Do you really want to delete this post ?");
+        console.log(deletePost);
+        if (deletePost){
+            console.log("Your post has been deleted Succesfully");
+        }
+        else{
+            console.log("Your post has not been deleted");
+        }
+
+    </script>
+</body>
+
+</html>

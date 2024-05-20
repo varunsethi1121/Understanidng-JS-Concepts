@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part 9 - DOCUMENT OBJECT MODEL </title>
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 200px;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+
+    <div class="heading" id="main">DOM in JavaScript</div>
+    <div class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Project</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="heading">
+        Another div with class name heading
+    </div>
+
+    <script>
+
+        //GRABBING AN ELEMENT WITH THE HELP OF ID 
+        let mainElement = document.getElementById('main');
+        console.log(mainElement);
+        let navElement = document.getElementById('nav');
+        console.log(navElement);
+
+        //IT WILL RETURN INNER HTML IN THE FORM OF STRING
+        console.log(navElement.innerHTML);
+
+        //WE CAN CHANGE THE ELEMENTS USING THIS METHOD
+        console.log(navElement.innerHTML = "<li>Changed List</li>");
+        //MOW IT WILL ONLY RETURN 1 LIST ELEMENT WITH NAME CHANGED LIST
+        console.log(navElement.innerHTML);
+
+        //GRABBING AN ELEEMNT WITH THE HELP OF CLASS ANME
+        let headingElements = document.getElementsByClassName('heading');
+        //IT WILL RETURN MULTIPLE ELEMNTS IN THE FORM OF AN ARRAY AND YOU CAN ASSESS THOSE THROUGH THEIR INDEX
+        console.log(headingElements);
+        console.log(headingElements[0]);
+        console.log(headingElements[1]);
+
+        //CSS SELECTOR IT WILL RETURN THE FIRST ELEMNT WITH THE CLASS NAME HEADING
+        let selectorElement = document.querySelector('.heading');
+        console.log("Slector Return: " + selectorElement);
+
+        let selectorElement1 = document.querySelector('#nav>li');
+        console.log("Slector Return: " + selectorElement1); 
+        
+        let selectorElement2 = document.querySelectorAll('#nav>li');
+        console.log("Slector Return: " + selectorElement2);
+    </script>
+</body>
+
+</html>

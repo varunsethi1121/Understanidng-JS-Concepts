@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part-7 LOOPS </title>
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 200px;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+
+    <div class="heading">Loops in JavaScript</div>
+
+    <script>
+        console.log("For Lopps in Javascript");
+
+        //FOR LOOP IS USED TO ITERATE THE ELEMENT OF AN ARRAY
+        let sampleArray = ["Varun Sethi", "Muskan Raj"];
+        for (let index = 0; index < sampleArray.length; index++) {
+            console.log("Hello " + sampleArray[index]);
+        }
+
+        //FOR EACH LOOP SYNTAX => arrayName.forEach (function functionName(parameter) {});
+        sampleArray.forEach(function f(element) {
+            console.log("Hello " + element + " to modern Javascript");
+        })
+
+        //FOR OF LOOP SYANTAX FOR (PARAMETER OF arrayName) {};
+        for (element of sampleArray) {
+            console.log("Hello " + element + " to modern Javascript again");
+        }
+
+        //ITERATING AN OBJECT WE ILL BE USINF FOR IN LOOP 
+        let studentObject = {
+            studentName: "Varun",
+            studentAge: 22
+        }
+        for (key in studentObject) {
+            console.log(`The ${key} of student is ${studentObject[key]}`);
+        }
+
+        //WHILE LOOP
+        let index = 0;
+        while (index < 4) {
+            console.log(`i ${index} is less than 4 FROM WHILE LOOP`);
+            index++;
+        }
+
+        //DO WHILE LOOP
+        let index1 = 0;
+        do {
+            console.log(`i ${index1} is less than 4 from DO WHILE LOOP`);
+            index1++;
+        } while (index1 < 4);
+    </script>
+</body>
+
+</html>
